@@ -63,7 +63,7 @@ async function run() {
       res.send(result);
     });
     app.get("/requestsendcollection", async (req, res) => {
-     
+     console.log(req.query)
       let querys={}
       if(req.query?.Usersemail){
         querys={
